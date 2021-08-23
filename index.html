@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      />
+      <link href="https://fonts.googleapis.com/css?family=Handlee|Share&display=swap" rel="stylesheet">
+    <title>Weather Dashboard</title>
+</head>
 
+<body>
+    <header>Weather Dashboard</header>
+<!-- Search weather conditions -->
+    <div class="container">
+        <div class="row">
+            <div class="col-3" id="nav">
+                <div id="search">
+                    <h3>Search Weather Conditions:</h3>
+                    <input type="text" placeholder="City" id="search-city" value="Enter city here..." onfocus="if (this.value == 'Enter city here...') {this.value=''}">                
+                    <button type="button" class="submit-btn btn btn-outline-dark btn-light" id="search-btn">Search</button>
+                    <br>                    
+                </div>
+
+                <div id="previous-searches"></div>
+            </div>
+
+            <div class="col-9" id="content">
+               
+                    <div id="weather-info">
+                        <h1><span id="city"></span> <img id="weather-image" src=""> <span id="date"></span></h1>
+                        <p>Description: <span id="description-weather"></span></p>                        
+                        <p>Temperature: <span id="temperature"></span> &#8457</p>
+                        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>UV Index: <span id="uv-index"></span></p>
+                    </div>  
+<!-- 5 day forecast -->
+                    <h3>5 Day Forecast</h3>
+               
+                    <div class="row row-cols-5" id="forecast">
+                        <div class="col" id="day1">
+                            <p><img id="weather-image1" src=""> <span id="date1"></span></p>
+                            <p>Temp: <span id="temperature1"></span> &#8457</p>
+                            <p>Humidity: <span id="humidity1"></span>%</p>
+                        </div>
+    
+                        <div class="col" id="day2">
+                            <p><img id="weather-image2" src=""> <span id="date2"></span></p>
+                            <p>Temp: <span id="temperature2"></span> &#8457</p>
+                            <p>Humidity: <span id="humidity2"></span>%</p>
+    
+                        </div>
+    
+                        <div class="col" id="day3">
+                            <p><img id="weather-image3" src=""> <span id="date3"></span></p>
+                            <p>Temp: <span id="temperature3"></span> &#8457</p>
+                            <p>Humidity: <span id="humidity3"></span>%</p>
+    
+                        </div>
+    
+                        <div class="col" id="day4">
+                            <p><img id="weather-image4" src=""> <span id="date4"></span></p>
+                            <p>Temp: <span id="temperature4"></span> &#8457</p>
+                            <p>Humidity: <span id="humidity4"></span>%</p>
+    
+                        </div>
+    
+                        <div class="col" id="day5">
+                            <p><img id="weather-image5" src=""> <span id="date5"></span></p>
+                            <p>Temp: <span id="temperature5"></span> &#8457</p>
+                            <p>Humidity: <span id="humidity5"></span>%</p>
+    
+                        </div>                      
+                    </div>
+                    
+                    
+                </div>
+                
+              </div>        
+        </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
