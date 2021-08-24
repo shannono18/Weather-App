@@ -16,7 +16,7 @@
 
 <body>
     <header>Weather Dashboard</header>
-<!-- Search weather conditions -->
+
     <div class="container">
         <div class="row">
             <div class="col-3" id="nav">
@@ -24,7 +24,8 @@
                     <h3>Search Weather Conditions:</h3>
                     <input type="text" placeholder="City" id="search-city" value="Enter city here..." onfocus="if (this.value == 'Enter city here...') {this.value=''}">                
                     <button type="button" class="submit-btn btn btn-outline-dark btn-light" id="search-btn">Search</button>
-                    <br>                    
+                    <br>   
+                    <div class="results" id="results"></div>                 
                 </div>
 
                 <div id="previous-searches"></div>
@@ -40,7 +41,7 @@
                         <p>Humidity: <span id="humidity"></span>%</p>
                         <p>UV Index: <span id="uv-index"></span></p>
                     </div>  
-<!-- 5 day forecast -->
+
                     <h3>5 Day Forecast</h3>
                
                     <div class="row row-cols-5" id="forecast">
@@ -78,12 +79,9 @@
     
                         </div>                      
                     </div>
-                    
-                    
                 </div>
-                
               </div>        
-        </div>
+             </div>
 
     <script src="script.js"></script>
     

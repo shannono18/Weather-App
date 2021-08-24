@@ -1,0 +1,65 @@
+
+header {
+    background-color: #595959;
+    color: white;
+    font-size: 300%;
+    text-align: center;
+    border-bottom: 5px solid #404040;
+}
+
+.container {
+    margin-bottom: 5%;   
+    background-color: transparent;
+} 
+
+#search {
+    margin-left: 5%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+#input {
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#previous-searches {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 3%;
+}
+
+#content {
+    background-color:  #fffefe;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    margin-top: 2%;    
+}
+
+#weather-info {    
+    margin-bottom: 2%;
+    margin-left: 3%;
+    padding: 2%;
+    width: auto;
+    height: auto;
+    background-color: transparent;  
+    border-bottom: 1px solid rgb(173, 169, 169);
+}
+
+#forecast {
+    background-color: transparent;
+    margin: 1%;
+    height: auto;
+    width: auto;
+}
+
+.col {
+    border: 1px solid #1f1f7a;
+    border-radius: 10px;
+    margin: 1%;
+    background-color: #3333cc;
+    color: white;
+}
+
